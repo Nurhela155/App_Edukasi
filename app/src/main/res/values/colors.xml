@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="judul">#F5EA72</color>
+    <color name="pinggiran">#83822C</color>
+    <color name="loginregister">#6D5115</color>
+    <color name="form">#6D5115</color>
+    <color name="quit">#EDDE45</color>
+    <color name="transparan">#BC9C2E</color>
+        <color name="button_text">#FFE082</color>
+
+
+</resources>

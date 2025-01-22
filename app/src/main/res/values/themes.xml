@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base App Theme -->
+    <style name="Theme.SafariAdventure" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Font -->
+        <item name="android:fontFamily">@font/fredokaone_regular</item>
+
+        <!-- Background -->
+        <item name="android:windowBackground">@drawable/dashboard</item>
+
+        <!-- Default Text Appearance -->
+        <item name="textAppearanceHeadline1">@style/TextViewStyle.SafariAdventure</item>
+    </style>
+
+    <!-- Theme for Play Activity -->
+    <style name="Theme.SafariAdventure.Play" parent="Theme.SafariAdventure">
+        <item name="android:windowBackground">@drawable/dashboard</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="ButtonStyle.SafariAdventure" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_dashboard</item>
+        <item name="backgroundTint">@null</item> <!-- Pastikan tidak tertimpa warna tema default -->
+        <item name="android:textColor">#F5EA72</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/fredokaone_regular</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="EditTextStyle.SafariAdventure" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:background">@drawable/input_login_register</item>
+        <item name="android:textColor">@color/form</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:fontFamily">@font/fredokaone_regular</item>
+    </style>
+
+    <!-- TextView Style -->
+    <style name="TextViewStyle.SafariAdventure" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/judul</item>
+        <item name="android:textSize">63sp</item>
+        <item name="android:fontFamily">@font/luckiest_guy</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#83822C</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">8</item>
+    </style>
+
+    <!-- Subtitle TextView Style -->
+    <style name="SubtitleTextViewStyle.SafariAdventure" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/loginregister</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/fredokaone_regular</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

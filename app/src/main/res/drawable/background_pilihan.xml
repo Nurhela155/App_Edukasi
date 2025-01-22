@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer (Simulasi Inner Shadow) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E36D5115" />
+            <corners android:radius="20dp" />
+            <stroke android:width="2dp" android:color="#6D5115" />
+            <padding android:top="3dp" android:left="3dp" android:right="3dp" android:bottom="3dp" />
+        </shape>
+    </item>
+    <!-- Inner Shadow Effect (Gradient for shadow simulation) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:startColor="#66000000"
+                android:endColor="#00000000"
+                android:gradientRadius="10dp"
+                android:type="radial" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</layer-list>
+

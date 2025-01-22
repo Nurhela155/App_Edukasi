@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard">
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:background="@android:color/transparent"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/setting"
+        android:contentDescription="Setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_profile"
+        android:background="@android:color/transparent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/profile"
+        android:contentDescription="Profil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="126dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="-21dp"
+        android:src="@drawable/tupai"
+        app:layout_constraintBottom_toTopOf="@+id/text_1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="440dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:gravity="center"
+        android:text="ARE YOU READY?"
+        android:textColor="@color/judul"
+        android:textSize="63sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="164dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginBottom="312dp"
+        app:layout_constraintBottom_toBottomOf="@+id/transparent_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/monyet" />
+
+    <View
+        android:id="@+id/transparent_box"
+        android:layout_width="334dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/transparant_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="332dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/fredokaone_regular"
+        android:gravity="center"
+        android:text="get to know the animals"
+        android:textColor="@color/loginregister"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_ready"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_quit"
+        style="@style/ButtonStyle.SafariAdventure"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#C9EDDE45"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/fredokaone_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Quit"
+        android:textColor="#6D5115"
+        android:textSize="20sp"
+        android:strokeColor="#EDEDDE45"
+        app:layout_constraintBottom_toBottomOf="@id/transparent_box"
+        app:layout_constraintEnd_toEndOf="@id/transparent_box"
+        app:layout_constraintStart_toStartOf="@id/transparent_box" />
+
+
+    <Button
+        android:id="@+id/btn_levels"
+        style="@style/ButtonStyle.SafariAdventure"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_dashboard"
+        android:fontFamily="@font/fredokaone_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Levels"
+        android:textColor="#F5EA72"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_quit"
+        app:layout_constraintEnd_toEndOf="@id/transparent_box"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/transparent_box" />
+
+    <Button
+        android:id="@+id/btn_about"
+        style="@style/ButtonStyle.SafariAdventure"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_dashboard"
+        android:fontFamily="@font/fredokaone_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="About"
+        android:textColor="#F5EA72"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_levels"
+        app:layout_constraintEnd_toEndOf="@id/transparent_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/transparent_box" />
+
+    <Button
+        android:id="@+id/btn_ready"
+        style="@style/ButtonStyle.SafariAdventure"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_dashboard"
+        android:fontFamily="@font/fredokaone_regular"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Ready"
+        android:textColor="#F5EA72"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btn_about"
+        app:layout_constraintEnd_toEndOf="@id/transparent_box" />
+</androidx.constraintlayout.widget.ConstraintLayout>
